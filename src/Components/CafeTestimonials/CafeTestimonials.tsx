@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
 import { useSearchParams } from "react-router-dom";
 import { Rating } from "@mui/material";
-import avatar1 from "../../assets/images/avatars/avatar-1.png";
 import { useAppSelector } from "../../app/hooks";
 import { ModalLoginWindow } from "../ModalLoginWindow/ModalLoginWindow";
 import { ModalComment } from "../ModalComment/ModalComment";
 import { useLocalStorage } from "../../customHook/useLocalStorage";
 
 export const CafeTestimonials: React.FC = () => {
+  const avatar1 = '/assets/images/avatars/avatar-1.png';
   const [searchParams, setSearchParams] = useSearchParams();
   const page = +(searchParams.get("page") || 1);
   const { loading, error } = useAppSelector((state) => state.comments);

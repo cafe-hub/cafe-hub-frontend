@@ -7,9 +7,4 @@ export default defineConfig({
     include: ["@mui/material", "@mui/system"],
     exclude: []
   },
-//   resolve: {
-//     alias: {
-//       '@mui/styled-engine': '@mui/styled-engine-sc',
-//     },
-// },
 });
